@@ -1,0 +1,42 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+
+$background-color: #666;
+$background-color-success: #60ad14;
+$background-color-warning: #e8a229;
+$background-color-error: #ec5959;
+
+$title-color: #fff;
+$message-color: rgba(255, 255, 255, 0.8);
+$updated-at-color: rgba(255, 255, 255, 0.8);
+
+// ----------------------------------------------------------------------------
+// Widget-service styles
+// ----------------------------------------------------------------------------
+
+.widget-service {
+
+  background-color: $background-color;
+
+  &.status-good, &.status-success {
+    background-color: $background-color-success;
+  }
+  &.status-minor, &.status-warning {
+    background-color: $background-color-warning;
+  }
+  &.status-major, &.status-error {
+    background-color: $background-color-error;
+  }
+
+  .title {
+    color: $title-color;
+  }
+  .message {
+    color: $message-color;
+  }
+  .updated-at {
+    color: $updated-at-color
+  }
+
+}
